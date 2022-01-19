@@ -23,7 +23,7 @@ class ShowAverage extends StatelessWidget {
           style: Constants.ortalamaStyle,
         ),
         Text(
-          "ortlama",
+          "ortalama",
           style: Constants.showAverageBodyStyle,
         )
       ],
