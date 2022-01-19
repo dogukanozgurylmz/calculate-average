@@ -12,9 +12,9 @@ class CrediDropdownWidget extends StatefulWidget {
 }
 
 class _CrediDropdownWidgetState extends State<CrediDropdownWidget> {
+   double secilenKrediDegeri = 1;
   @override
   Widget build(BuildContext context) {
-    double secilenKrediDegeri = 1;
     return Container(
       alignment: Alignment.center,
       padding: Constants.dropDownPadding,
@@ -28,7 +28,7 @@ class _CrediDropdownWidgetState extends State<CrediDropdownWidget> {
         onChanged: (deger) {
           setState(() {
             secilenKrediDegeri = deger!;
-            widget.onKrediSecildi;
+            widget.onKrediSecildi(deger);
           });
         },
         underline: Container(),
