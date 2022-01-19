@@ -27,7 +27,7 @@ class _NoteDropdownWidgetState extends State<NoteDropdownWidget> {
         onChanged: (deger) {
           setState(() {
             secilenDeger = deger!;
-            widget.onHarfSecildi();
+            widget.onHarfSecildi(deger);
           });
         },
         underline: Container(),
