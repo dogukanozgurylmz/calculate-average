@@ -3,9 +3,10 @@ import 'package:dinamik_ortalama_hesaplama/helper/data.dart';
 import 'package:flutter/material.dart';
 
 class NoteDropdownWidget extends StatefulWidget {
+   final Function onHarfSecildi;
   const NoteDropdownWidget({Key? key, required this.onHarfSecildi})
       : super(key: key);
-  final Function onHarfSecildi;
+ 
   @override
   _NoteDropdownWidgetState createState() => _NoteDropdownWidgetState();
 }
