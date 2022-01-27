@@ -19,7 +19,12 @@ class DataHelper {
       totalCredi += element.credi.toInt();
     });
 
-    return totalNote / totalCredi;
+    double gradeAverage = totalNote / totalCredi;
+    return gradeAverage;
+  }
+  
+  static clearLessonList(){
+    allAddingLessons.clear();
   }
 
   static List<String> _allCrediOfLesson() {
