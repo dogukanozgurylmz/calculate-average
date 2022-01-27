@@ -50,6 +50,21 @@ class _HomePageState extends State<HomePage> {
                     ortalama: DataHelper.calculateAverage()),
               )
             ]),
+            
+            //Clear Lesson List
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      DataHelper.clearLessonList();
+                    });
+                  },
+                  child: const Text("Tümünü temizle"),
+                ),
+              ],
+            ),
 
             //list
             Expanded(
